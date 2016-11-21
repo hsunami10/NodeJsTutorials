@@ -1,6 +1,7 @@
 // Objects -> a collection of name/value pairs
 // Object literals -> name/value pairs separated by commas and surrounded by {} - to create an object efficiently
 
+// Create object called person
 var person = {
     firstname: "Michael",
     lastname: "Hsu",

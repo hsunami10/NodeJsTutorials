@@ -1,7 +1,7 @@
 /*
     Prototypal Inheritance: an object can INHERIT properties from its prototypes
         obj -> prop1
-             -> prototype1 -> prop2
+            -> prototype1 -> prop2
         obj.prop1
         obj.prop2
         prototype chain
