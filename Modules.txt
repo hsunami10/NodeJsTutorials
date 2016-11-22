@@ -1,5 +1,0 @@
-module -> a reusable block of code whose existence does not accidentally impact other code
-module.exports -> object
-
-require is a function, only called once when used
-require("path") = module.exports

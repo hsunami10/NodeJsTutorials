@@ -1,0 +1,9 @@
+module -> a reusable block of code whose existence does not accidentally impact other code
+module.exports -> module is an object with property exports
+
+require is a function, only called once when used
+require("path") = module.exports
+require returns the module object's exports property
+
+mutating -> changing the object (not setting the object equal to another value) -> not replacing
+    ex. adding a function, not setting it equal to a function
