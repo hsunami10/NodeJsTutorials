@@ -1,6 +1,8 @@
 // require() is a function that takes in a string that contains the location of the module to import
-
 // require returns module.exports/what is exposed
-var greet = require("./greet.js");
 
-greet();
+// Look inside the greet folder for index.js
+var greet = require("./greet");
+
+greet.english();
+greet.spanish();

@@ -7,7 +7,7 @@
         prototype chain
     Function Constructors: a normal function that is used to construct/initialize objects
         use this to create a property for an empty object
-        use new to create a new object from the function constructor
+        use new to create a new object of the function constructor
 */
 
 // Create a function constructor -> like a class constructor in Java
@@ -23,7 +23,7 @@ Person.prototype.greet = function() {
     console.log("Hello " + this.firstname + " " + this.lastname);
 };
 
-// Make a new object from function constructor
+// Make a new Person object
 var michael = new Person("Michael", "Hsu");
 michael.greet();
 
