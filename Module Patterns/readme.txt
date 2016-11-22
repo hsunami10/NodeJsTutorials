@@ -1,0 +1,1 @@
+This folder shows the general module pattern usage between require and module.exports
