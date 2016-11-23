@@ -13,4 +13,11 @@ V8 is synchronous, but the process of *****EVENT DRIVEN NON-BLOCKING I/O IN V8 J
 Streams and Buffers
     ***Buffer*** -> a temporary holding spot for data being moved from one place to another - limited size
     ***Stream*** -> a sequence of data made available over time -> pieces of data that eventually combine into a whole
-        data moving...usually process the data in some way WHILE it's moving
+    data moving in stream...stored in chunks in the buffer...processed in chunks
+
+Binary data -> data stored in binary - 1 or 0 are called bits
+Character set -> a representation of characters as numbers (ASCII, Unicode)
+Character encoding -> how characters are stored in binary (UTF-8)
+    numbers (code points) are stored in binary
+***character (ex. h) -> character set (ex. h = 104) -> character encoding (ex. h = 104 = 01101000)
+
