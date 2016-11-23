@@ -1,0 +1,13 @@
+Event: something that has happened in the app that we can respond to
+
+2 types of events:
+    System events -> C++ Core
+        deals with events coming from the computer system
+        libuv
+    Custon events -> Javascript Core
+        deals with events created by the programmer
+        Event Emitter
+
+Event listener: the code that responds to the event
+    can have multiple listeners
+    usually a function in Javascript

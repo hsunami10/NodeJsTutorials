@@ -13,5 +13,5 @@ var person = {
 // Invoke person's greet method'
 person.greet();
 
-// Another way to invoke... object["properties"]
+// Another way to invoke... with strings -> object["properties"]
 console.log(person["firstname"]);
