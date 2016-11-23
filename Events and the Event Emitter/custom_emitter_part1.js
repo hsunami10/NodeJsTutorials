@@ -1,3 +1,7 @@
+/*
+    This is an example of a custom emitter
+*/
+
 function Emitter() {
     this.events = {};
 }

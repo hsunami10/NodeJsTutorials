@@ -1,0 +1,6 @@
+3 ways to inherit a prototype:
+    1) create a function constructor, and add properties to that constructor's prototype
+        (ex. -> Constructor.prototype.functionName = function () ...
+    2) create an object literal, and use var x = Object.create(<object literal>) to inherit properties
+    3) require("util") and use util.inherits(Constructor, x) to allow any object created from Constructor
+       to inherit the methods and properties of x

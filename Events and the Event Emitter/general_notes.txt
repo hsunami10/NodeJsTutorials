@@ -4,10 +4,15 @@ Event: something that has happened in the app that we can respond to
     System events -> C++ Core
         deals with events coming from the computer system
         libuv
-    Custon events -> Javascript Core
+    Custom events -> Javascript Core
         deals with events created by the programmer
         Event Emitter
 
 Event listener: the code that responds to the event
     can have multiple listeners
-    usually a function in Javascript
+    function in Javascript
+
+Magic string: a string that has some special meaning in the code
+
+.on(type, listener) adds event listeners (functions) to the array of a certain type
+.emit(type) runs (through) each element of the array of a certain type

@@ -25,6 +25,6 @@ arr.push(function () {
 
 // For each loop for arrays: call the argument for every element
 // item is each element in the array
-arr.forEach(function(item) {
-    item();
+arr.forEach(function(element) {
+    element();
 });
