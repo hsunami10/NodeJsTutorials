@@ -8,10 +8,11 @@ Emitter.prototype.on = function(type, listener) {
     // If the property does not exist, make an empty array -> accessing properties of this.events object
     this.events[type] = this.events[type] || [];
 
-    // Push the listener into the array
+    // Push the listener (function) into the array
     this.events[type].push(listener);
 }
 
+// type is an array of functions
 // emit is a common term for saying: "something happened, let's respond"
 Emitter.prototype.emit = function(type) {
     // if property exists and is found, then run every element of the array

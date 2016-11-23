@@ -1,4 +1,4 @@
-var Emitter = require("./emitter");
+var Emitter = require("./emitter-part1");
 
 var emtr = new Emitter();
 
