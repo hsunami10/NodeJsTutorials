@@ -1,0 +1,16 @@
+Asynchronous -> more than one process can be run simultaneously (node.js)
+Synchornous -> one process is executing at a time (Javascript V8)
+
+Callback -> a function passed to another function, which is assumed to be invoked at some point
+    the function that's running "calls back" (invokes) the function we give it
+    dumb it down: some code, give to other code to be run at some point AFTER the other code is DONE running
+
+V8 is synchronous, but the process of *****EVENT DRIVEN NON-BLOCKING I/O IN V8 JAVASCRIPT***** is asymchronous
+    -> libuv requests, OS outputs an event to the queue, libuv runs the event loop (constantly) to check if the event finished,
+       then runs the callback to the V8 engine only if the code in the V8 engine is finished running
+    non-blocking -> doing other things without stopping your program from running
+
+Streams and Buffers
+    ***Buffer*** -> a temporary holding spot for data being moved from one place to another - limited size
+    ***Stream*** -> a sequence of data made available over time -> pieces of data that eventually combine into a whole
+        data moving...usually process the data in some way WHILE it's moving

@@ -1,0 +1,8 @@
+New version of Javascript: ES6 (ECMAScript 2015)
+V8 Javascript engine
+
+babeljs.io takes ES6 Javascript and converts to an older version of Javascript
+
+When writing ES6, you might need a jsconfig.json file to tell .vscode that the language is in ES6
+
+Syntactic sugar -> a feature that only changes how something is typed, not how it's run under the hood
