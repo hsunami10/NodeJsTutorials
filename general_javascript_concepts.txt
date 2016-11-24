@@ -1,5 +1,5 @@
 Asynchronous -> more than one process can be run simultaneously (node.js)
-Synchornous -> one process is executing at a time (Javascript V8)
+Synchronous -> one process is executing at a time (Javascript V8)
 
 Callback -> a function passed to another function, which is assumed to be invoked at some point
     the function that's running "calls back" (invokes) the function we give it
