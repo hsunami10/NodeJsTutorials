@@ -14,10 +14,10 @@ var john = Object.create(person);
 john.firstname = "John";
 john.lastname = "Doe";
 
-// John is an empty object whose prototype is the person object literal
+// jane is an empty object whose prototype is the person object literal
 var jane = Object.create(person);
-john.firstname = "Jane";
-john.lastname = "Doe";
+jane.firstname = "Jane";
+jane.lastname = "Doe";
 
 console.log(john.greet());
 console.log(jane.greet());  

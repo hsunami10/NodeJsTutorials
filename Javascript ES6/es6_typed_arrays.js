@@ -1,6 +1,4 @@
-/*
-    This has nothing to do with node, just an example of a new feature in V8 engine
-*/
+// This has nothing to do with node, just an example of a new feature in V8 engine
 
 // A byte is 8 bits -> takes the size of the array in bytes
 var buffer = new ArrayBuffer(8);

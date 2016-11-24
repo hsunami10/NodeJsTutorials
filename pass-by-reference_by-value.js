@@ -9,7 +9,7 @@
 
 
 // Pass by value
-// b is copy of a (bc primitive type), so the value of a doesn't change'
+// b is copy of a (bc primitive type), so the value of a doesn't change
 function change(b) {
     b = 2;
 }

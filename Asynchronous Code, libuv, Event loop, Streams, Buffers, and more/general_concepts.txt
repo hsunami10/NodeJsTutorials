@@ -1,4 +1,6 @@
-Asynchronous -> more than one process can be run simultaneously (node.js)
+Application: asynchronous processes for maximum performance & streams, minimize how much data we're working with at any one time inside the buffer
+
+Asynchronous -> more than one process can be run simultaneously (node.js) ***ALWAYS CHOOSE THIS WHEN WRITING APPLICATIONS***
 Synchronous -> one process is executing at a time (Javascript V8)
 
 Callback -> a function passed to another function, which is assumed to be invoked at some point
@@ -13,7 +15,8 @@ V8 is synchronous, but the process of *****EVENT DRIVEN NON-BLOCKING I/O IN V8 J
 Streams and Buffers
     ***Buffer*** -> a temporary holding spot for data being moved from one place to another - limited size
     ***Stream*** -> a sequence of data made available over time -> pieces of data that eventually combine into a whole
-    data moving in stream...stored in chunks in the buffer...processed in chunks
+    data moving in stream...stored in chunks in the buffer...processed in chunks -> inherits Event Emitters
+        Chunk -> a piece of data being sent through a stream (data's split into chunks)
 
 Binary data -> data stored in binary - 1 or 0 are called bits
 Character set -> a representation of characters as numbers (ASCII, Unicode)
@@ -21,3 +24,27 @@ Character encoding -> how characters are stored in binary (UTF-8)
     numbers (code points) are stored in binary
 ***character (ex. h) -> character set (ex. h = 104) -> character encoding (ex. h = 104 = 01101000)
 
+In general, you don't want read file to be synchronous, since if there are multiple people requesting the same file, it may slow the application
+
+***Error first callbacks*** -> callback that takes an ERROR object as the FIRST PARAMETER
+    null if no error, otherwise contain an object defining the error
+
+Heap in V8 -> memory space the javascript V8 uses -> if you use buffers to store data, it automatically stores it into the heap in V8, which
+              once there's a ton of large files, may cause a memory problem in the application
+
+Types of Streams:
+    1) Readable -> only reads data coming through, can't send
+    2) Writable -> send data to the stream, can't read
+    3) Duplex -> reads and writes
+    4) Transform -> changes data as it moves through the stream
+    5) Passthrough
+
+Abstract (base) class -> a type of constructor you never work directly from, but inherit from
+    create a new custom object that inherits from the abstract base class
+
+Pipe -> connecting two streams by writing to one stream what is being read to another -> read.pipe(write);
+    in node, pipe from a readable stream to a writable stream
+    "pipe" something from the readable stream to the writable stream
+    .pipe("writable") returns the destination, so if the destination is duplex, can call .pipe("writable") again
+
+Method chaining -> a method that returns an object so we can keep calling other methods
