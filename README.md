@@ -1,1 +1,1 @@
-This repository is for all of the program that I've written following Node.js tutorials
+This repository is for all of the programs and notes that I've written following www.udemy.com -> Node.js tutorials

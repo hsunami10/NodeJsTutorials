@@ -19,9 +19,16 @@ function Policeman() {
     this.badgenumber = "1234";
 }
 
+Policeman.prototype.badge = function() {
+    console.log("The badge number is " + this.badgenumber);
+}
+
+// Person prototypes are now also Policeman prototypes
 util.inherits(Policeman, Person);
+
 var officer = new Policeman();
 officer.greet();
+officer.badge();
 
 var michael = new Person();
 michael.greet();

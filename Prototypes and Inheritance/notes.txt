@@ -1,9 +1,11 @@
+A prototype is essentially an object
+
 3 ways to inherit a prototype:
     1) create a function constructor, and add properties to that constructor's prototype
         (ex. -> Constructor.prototype.functionName = function () ...
     2) create an object literal, and use var x = Object.create(<object literal>) to inherit properties
-    3) require("util") and use util.inherits(Constructor, x) to allow any object created from Constructor
-       to inherit the methods and properties of x's prototypes
-            Constructor inherits x
-            ***only allows prototypes to be inherited, not properties that are explicitly defined to x
-                -> to have Constructor see properties of x -> add x.call(this) to Constructor
+    3) require("util") and use util.inherits(Constructor, Cons2) to allow any object created from Constructor
+       to inherit the methods and properties of Cons2's prototypes
+            Constructor inherits Cons2
+            ***only allows prototypes to be inherited, not properties that are explicitly defined to Cons2
+                -> to have Constructor see properties of Cons2 -> add Cons2.call(this) to Constructor
