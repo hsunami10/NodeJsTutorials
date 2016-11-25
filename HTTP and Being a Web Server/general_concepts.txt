@@ -16,7 +16,7 @@ Port -> once a computer receives a packet, how it knows what program to send it 
 
 Socket address -> [ip address]:[port]
 
-HTTP (hypertext transfer protocol) -> a format -> a set of rules (and a format) for data being transferred on the web
+HTTP (hypertext transfer protocol) -> a standard format -> a set of rules (and a format) for data being transferred on the web
     one of many formats that defines data being transferred via TCP/IP
     usually formatted like:
         1) Status number -> checks whether the everything went well
@@ -32,3 +32,13 @@ plain text -> "Content-type": "plain/text"
 html -> "Content-type": "text/html"
 
 Template -> text designed to be the basis for final text or content after being processed
+
+API (application programming interface) -> a set of tools for building a software application
+    on the web, APis are usually a set of URLs which accept and send only data vio HTTP and TCP/IP
+Endpoint -> one particular URL that's part of a web API
+
+Serialize -> translating an object into a format that can be stored or transferred
+    ex. convert to JSON, XML, CSV
+
+Routing -> mapping HTTP requests to content 
+    if someone requests something, give the content back to them (ex. downloading a file off the internet)
