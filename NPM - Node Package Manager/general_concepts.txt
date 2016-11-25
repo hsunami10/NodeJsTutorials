@@ -14,3 +14,11 @@ Semantic Versioning (SemVer) -> implies that the version (numbers) mean somethin
         major changes...version 2.0.0 - code might break 
 
 Moment -> a package for manipulating and displaying dates
+
+***To create a package.json file***
+    go to the nodejs directory in the cmd/terminal
+    -npm init
+    -fill in information
+        name - name of file
+        scripts section in json file 
+            command line commands - ex. "test" - npm test 
