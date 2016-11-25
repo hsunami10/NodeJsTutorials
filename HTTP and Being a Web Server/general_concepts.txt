@@ -1,0 +1,34 @@
+protocol -> a set of rules that two sides agree on to use when communicating 
+            both the client and server are programmed to understand and use that particular set of rules
+
+IP (internet protocol) -> says that this sequence of numbers will be the identifier
+                          each computer is identified by its own unique IP address
+
+Socket -> path in which information flows
+
+TCP (transmission control protocol) -> determines how the information is sent
+    split information into packets, and send one at a time through the Socket
+    packet -> each piece of information
+
+Port -> once a computer receives a packet, how it knows what program to send it to 
+    when a program is setup to receive packets from a particular port, that program is "listening" to that port
+    have multiple programs, each one is specified by a specific port 
+
+Socket address -> [ip address]:[port]
+
+HTTP (hypertext transfer protocol) -> a format -> a set of rules (and a format) for data being transferred on the web
+    one of many formats that defines data being transferred via TCP/IP
+    usually formatted like:
+        1) Status number -> checks whether the everything went well
+        2) Header -> name: value (MIME type)
+        3) Body -> what is being sent
+
+MIME (multipurpose internet mail extensions) type -> standard for specifying the type of data being sent 
+    ex. applications/json, image/jpeg, text/html
+
+Parse -> break information up into pieces and analyze
+
+plain text -> "Content-type": "plain/text"
+html -> "Content-type": "text/html"
+
+Template -> text designed to be the basis for final text or content after being processed
