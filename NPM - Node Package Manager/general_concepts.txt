@@ -1,0 +1,16 @@
+Package -> code that is managed and maintained with a package management system
+Package management system -> software that automates installing and updating packages
+    some manage ***dependencies*** -> code that another set of code depends on to function
+        ex. if you use certain code in an app, the code is a dependency, since the app depends on it
+        if something depends on it, then it's a dependency
+
+Versioning -> specifying what version of a set of code this is, so others can track if a new version has come out, watch for new features,
+              breaking changes -> a change is made in which old code does not work in 
+Semantic Versioning (SemVer) -> implies that the version (numbers) mean something - semver.org
+    basic core of semver: MAJOR.MINOR.PATCH
+        ex. current version is 1.7.2
+        bug fixed...version is 1.7.3 - code will work fine
+        added new features...version is 1.8.0 - code will work fine
+        major changes...version 2.0.0 - code might break 
+
+Moment -> a package for manipulating and displaying dates
