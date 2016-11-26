@@ -15,10 +15,17 @@ Semantic Versioning (SemVer) -> implies that the version (numbers) mean somethin
 
 Moment -> a package for manipulating and displaying dates
 
-***To create a package.json file***
-    go to the nodejs directory in the cmd/terminal
-    -npm init
-    -fill in information
-        name - name of file
-        scripts section in json file 
-            command line commands - ex. "test" - npm test 
+Install packages:
+    make sure you are in the root folder of your directory
+    1) Create a package.json file (for installing packages)
+        go to the nodejs directory in the cmd/terminal
+        -npm init
+        -fill in information
+            name - name of file
+            scripts section in json file 
+                command line commands - ex. "test" - npm test 
+    2) npm install <packagename> --save
+        npm will go to the npm registry, download the files with <packagename>
+        --save -> notes what you're using in the app in the package.json file (save a reference)
+        adds the "dependencies" section in json file 
+        *if using a repo, only push the package.json, not the the package folder that you downloaded*

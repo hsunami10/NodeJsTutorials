@@ -19,7 +19,7 @@ http.createServer(function (req, res) {
             lastname: "Doe"
         };
 
-        // Serialize obj
+        // Serialize obj -> convert to JSON 
         res.end(JSON.stringify(obj));
     }
     else {
