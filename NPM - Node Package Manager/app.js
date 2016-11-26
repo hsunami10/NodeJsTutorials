@@ -1,5 +1,22 @@
-// Getting access to installed modules/packages
+var http = require("http");
+var fs = require("fs");
 
-var moment = require("moment");
+http.createServer(function (req, res) {
 
-console.log(moment().format("ddd, hA"));
+    if(req.url === "/") {
+        fs.createReadStream(__dirname + "/index.htm").pipe(res);
+    }
+    else if(req.url === "/json") {
+        res.writeHead(200, {"Content-Type": "application/json"})
+        var obj = {
+            firstname: "John",
+            lastname: "Doe"
+        };
+        res.end(JSON.stringify(obj));
+    }
+    else {
+        // Status code 404: not found
+        res.writeHead(404);
+        res.end();
+    }
+}).listen(1337, "127.0.0.1");
