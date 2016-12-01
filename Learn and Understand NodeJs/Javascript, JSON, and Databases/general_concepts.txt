@@ -1,0 +1,23 @@
+Relational Databases -> "tables" of fields and values (ex. one table for person, one for address), and connect them with an ID
+    -well normalized data -> data that doesn't repeat itself
+
+Generally, take data from multiple "tables" and combine into one table
+
+How does Javascript store data?: an array of objects
+EX.
+[
+    {
+        ID: 2,
+        Firstname: "John",
+        Lastname: "Doe",
+        Address: "555 Main St."
+    },
+    {
+        ID: 2,
+        Firstname: "Jane",
+        Lastname: "Doe",
+        Address: "555 Main St."
+    }
+]
+
+Download mysql (most popular) for databases 

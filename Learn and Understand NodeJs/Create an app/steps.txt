@@ -1,0 +1,7 @@
+1) Download dependencies
+2) Set up templates, assets, port check and default port
+3) Set up a free database through mlab.com
+4) Create a database user
+5) use the url at "To connect using a driver via the standard MongoDB URI" to connect to the mongo database 
+
+Config folder is to configure the connection to the database 

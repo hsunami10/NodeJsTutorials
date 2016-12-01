@@ -1,0 +1,15 @@
+Environment Variables -> global variables specific to the environment (server) the code is in
+    different servers can have different variable settings
+
+HTTP Method -> specifies the type of action the request wishes to make
+    ex. get, post, put, delete, etc...also called verbs
+        get -> downloading a file
+        post -> submitting data in a form
+
+Middleware -> code/software that sits between two layers of software 
+    ex. responding to a request before it's sent
+
+Put static files in the "public" folder
+    static files -> files that don't change
+
+Express methods (general syntax) -> app.method(request-url, action);
